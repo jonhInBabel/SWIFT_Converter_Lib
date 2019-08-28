@@ -1,0 +1,47 @@
+//
+// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0 
+// Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+// Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+// Generado el: 2019.08.27 a las 02:07:08 PM CEST 
+//
+
+
+package iso.std.iso._20022.tech.xsd.camt_054_001_02;
+
+import javax.xml.bind.annotation.XmlEnum;
+import javax.xml.bind.annotation.XmlType;
+
+
+/**
+ * <p>Clase Java para EntryStatus2Code.
+ * 
+ * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="EntryStatus2Code"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="BOOK"/&gt;
+ *     &lt;enumeration value="PDNG"/&gt;
+ *     &lt;enumeration value="INFO"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
+ * </pre>
+ * 
+ */
+@XmlType(name = "EntryStatus2Code")
+@XmlEnum
+public enum EntryStatus2Code {
+
+    BOOK,
+    PDNG,
+    INFO;
+
+    public String value() {
+        return name();
+    }
+
+    public static EntryStatus2Code fromValue(String v) {
+        return valueOf(v);
+    }
+
+}
