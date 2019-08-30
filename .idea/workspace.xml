@@ -1,17 +1,249 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e33c6b5-0b0b-48ff-be1b-55c7d82ff22a" name="Default Changelist" comment="" />
+    <list default="true" id="d36e4ec3-80ee-470b-9190-c2e32408ce80" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_prowidesoftware_pw_swift_core_SRU2018_7_10_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_text_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_11_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_26.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_26.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/babel/swift/converters/ConverterFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/babel/swift/exceptions/MTConversionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/babel/swift/exceptions/MTFieldParsingException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/babel/swift/exceptions/MTParsingException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/babel/swift/exceptions/MXConversionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/babel/swift/mappingfields/AMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/babel/swift/mappingfields/Cam054XMLGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/babel/swift/mappingfields/IXMLGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/babel/swift/rules/CurrencyAndAmountFromField32A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/babel/swift/rules/IRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swift.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.springframework.ide.eclipse.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/babel/swift/SWIFT_Message_Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/babel/swift/SWIFT_Message_Converter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/babel/swift/constructors/Camt054V00102_From_MT900_Constructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/babel/swift/constructors/Camt054V00102_From_MT900_Constructor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/babel/swift/converters/I_MT_MX_Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/babel/swift/converters/I_MT_MX_Converter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/babel/swift/converters/MT900_Camt054_Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/babel/swift/converters/MT900_Camt054_Converter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/babel/swift/exceptions/MXVersionNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/babel/swift/exceptions/MXVersionNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/babel/swift/mappingfields/Camt054V00102_From_MT900_Mapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/babel/swift/mappingfields/Camt054V00102_From_MT900_Mapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/babel/swift/rules/Field32A_Rules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/babel/swift/rules/DateFromField32A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/com.babel/swift/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/com.babel/swift/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/babel/swift/SWIFT_Message_Converter$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/babel/swift/SWIFT_Message_Converter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/babel/swift/constructors/Camt054V00102_From_MT900_Constructor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/babel/swift/converters/I_MT_MX_Converter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/babel/swift/converters/MT103_Pacs008_Converter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/babel/swift/converters/MT202_Pacs009_Converter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/babel/swift/converters/MT900_Camt054_Converter$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/babel/swift/converters/MT900_Camt054_Converter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/babel/swift/converters/MT910_Camt054_Converter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/babel/swift/converters/MT940_Camt053_Converter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/babel/swift/exceptions/MTTypeNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/babel/swift/exceptions/MXVersionNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/babel/swift/mappingfields/Camt054V00102_From_MT900_Mapping.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/babel/swift/rules/Field20_Rules.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/babel/swift/rules/Field21_Rules.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/babel/swift/rules/Field25_Rules.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/babel/swift/rules/Field32A_Rules.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/babel/swift/rules/Field52A_Rules.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/babel/swift/rules/Field52D_Rules.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/babel/swift/rules/Field72_Rules.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/babel/swift/rules/InputDestinationAddress_Rules.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/babel/swift/rules/LogicalTerminalAddress_Rules.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/babel/swift/support/Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/babel/swift/support/EnumCamt053Version.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/babel/swift/support/EnumCamt054Version.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/babel/swift/support/EnumMTType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/babel/swift/support/EnumPacs008Version.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/babel/swift/support/EnumPacs009Version.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/babel/swift/support/Utils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/AccountIdentification4Choice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/AccountInterest2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/AccountNotification2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/AccountSchemeName1Choice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/ActiveOrHistoricCurrencyAndAmount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/AddressType2Code.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/AlternateSecurityIdentification2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/AmountAndCurrencyExchange3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/AmountAndCurrencyExchangeDetails3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/AmountAndCurrencyExchangeDetails4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/AmountRangeBoundary1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/BankToCustomerDebitCreditNotificationV02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/BankTransactionCodeStructure4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/BankTransactionCodeStructure5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/BankTransactionCodeStructure6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/BatchInformation2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/BranchAndFinancialInstitutionIdentification4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/BranchData2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/CashAccount16.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/CashAccount20.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/CashAccountType2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/CashAccountType4Code.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/CashBalanceAvailability2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/CashBalanceAvailabilityDate1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/ChargeBearerType1Code.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/ChargeType1Code.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/ChargeType2Choice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/ChargesInformation6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/ClearingSystemIdentification2Choice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/ClearingSystemMemberIdentification2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/ContactDetails2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/CopyDuplicate1Code.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/CorporateAction1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/CreditDebitCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/CreditorReferenceInformation2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/CreditorReferenceType1Choice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/CreditorReferenceType2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/CurrencyAndAmountRange2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/CurrencyExchange5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/DateAndDateTimeChoice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/DateAndPlaceOfBirth.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/DatePeriodDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/DateTimePeriodDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/Document.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/DocumentAdjustment1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/DocumentType3Code.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/DocumentType5Code.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/EntryDetails1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/EntryStatus2Code.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/EntryTransaction2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/FinancialIdentificationSchemeName1Choice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/FinancialInstitutionIdentification7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/FinancialInstrumentQuantityChoice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/FromToAmountRange.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/GenericAccountIdentification1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/GenericFinancialIdentification1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/GenericIdentification3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/GenericOrganisationIdentification1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/GenericPersonIdentification1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/GroupHeader42.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/ImpliedCurrencyAmountRangeChoice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/InterestType1Choice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/InterestType1Code.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/MessageIdentification2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/NameAndAddress10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/NamePrefix1Code.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/NumberAndSumOfTransactions1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/NumberAndSumOfTransactions2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/ObjectFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/OrganisationIdentification4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/OrganisationIdentificationSchemeName1Choice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/Pagination.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/Party6Choice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/PartyIdentification32.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/PersonIdentification5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/PersonIdentificationSchemeName1Choice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/PostalAddress6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/ProprietaryAgent2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/ProprietaryBankTransactionCodeStructure1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/ProprietaryDate2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/ProprietaryParty2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/ProprietaryPrice2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/ProprietaryQuantity1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/ProprietaryReference1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/Purpose2Choice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/Rate3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/RateType4Choice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/ReferredDocumentInformation3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/ReferredDocumentType1Choice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/ReferredDocumentType2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/RemittanceAmount1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/RemittanceInformation5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/RemittanceLocation2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/RemittanceLocationMethod2Code.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/ReportEntry2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/ReportingSource1Choice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/ReturnReason5Choice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/ReturnReasonInformation10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/SecurityIdentification4Choice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/StructuredRemittanceInformation7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/TaxAmount1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/TaxAuthorisation1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/TaxCharges2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/TaxInformation3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/TaxParty1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/TaxParty2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/TaxPeriod1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/TaxRecord1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/TaxRecordDetails1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/TaxRecordPeriod1Code.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/TechnicalInputChannel1Choice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/TotalTransactions2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/TotalsPerBankTransactionCode2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/TransactionAgents2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/TransactionDates2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/TransactionInterest2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/TransactionParty2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/TransactionPrice2Choice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/TransactionQuantities1Choice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/TransactionReferences2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/iso/std/iso/_20022/tech/xsd/camt_054_001_02/package-info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xsd/camt.054.001.02.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swift-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="1Pxitdnw7i6GATcPgCjXP70odCL" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1Q8XrhZraxbJZzNnLcoru6XdVhi" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="ignore.virus.scanning.warn.message" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -30,16 +262,27 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0e33c6b5-0b0b-48ff-be1b-55c7d82ff22a" name="Default Changelist" comment="" />
-      <created>1566822364368</created>
+      <changelist id="d36e4ec3-80ee-470b-9190-c2e32408ce80" name="Default Changelist" comment="" />
+      <created>1567153397946</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1566822364368</updated>
-      <workItem from="1566822368404" duration="98000" />
+      <updated>1567153397946</updated>
+      <workItem from="1567153400980" duration="16824000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
