@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public enum EnumPacs008Version {
+public enum EnumMTVersion {
 
 	V000_00( "" ),
 	
@@ -14,7 +14,7 @@ public enum EnumPacs008Version {
 	
 	private final String type;
 	
-	EnumPacs008Version( final String type ) {
+	EnumMTVersion(final String type ) {
 		this.type = type;
 	}
 	
@@ -22,8 +22,8 @@ public enum EnumPacs008Version {
 		return this.type;
 	}
 	
-	public static EnumPacs008Version fromString( String type ) {
-        for ( EnumPacs008Version mxVersion : EnumPacs008Version.values() ) {
+	public static EnumMTVersion fromString(String type ) {
+        for ( EnumMTVersion mxVersion : EnumMTVersion.values() ) {
             if (mxVersion.type.equalsIgnoreCase( type )) {
                 return mxVersion;
             }
@@ -32,8 +32,8 @@ public enum EnumPacs008Version {
     }
 	
 	public static String getLast() {
-		List<EnumPacs008Version> lst = new ArrayList<>();
-		for ( EnumPacs008Version mxVersion : EnumPacs008Version.values() ) {
+		List<EnumMTVersion> lst = new ArrayList<>();
+		for ( EnumMTVersion mxVersion : EnumMTVersion.values() ) {
             lst.add(mxVersion);
         }
 		int last = lst.size();

@@ -1,4 +1,4 @@
-package com.babel.swift.rules;
+package com.babel.swift.rules.MT900.MTRules;
 
 public class LogicalTerminalAddress_Rules {
 		

@@ -1,6 +1,7 @@
-package com.babel.swift.mappingfields;
+package com.babel.swift.mappers.MT900;
 
 import com.babel.swift.exceptions.MTConversionException;
+import com.babel.swift.mappers.IXMLGenerator;
 import com.babel.swift.support.Constants;
 import iso.std.iso._20022.tech.xsd.camt_054_001_02.Document;
 
@@ -12,7 +13,7 @@ import javax.xml.namespace.QName;
 import java.io.StringWriter;
 import java.io.Writer;
 
-public class Cam054XMLGenerator implements IXMLGenerator {
+public class MT900XMLGenerator implements IXMLGenerator {
     @Override
     public String getXML(Object mxObject) throws MTConversionException {
         JAXBContext contextObj = null;

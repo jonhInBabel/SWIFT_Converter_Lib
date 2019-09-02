@@ -2,6 +2,6 @@ package com.babel.swift.rules;
 
 import com.babel.swift.exceptions.MTFieldParsingException;
 
-public interface IRule {
+public interface IMTRule {
     Object apply (Object mtField) throws MTFieldParsingException;
 }

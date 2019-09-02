@@ -1,12 +1,13 @@
-package com.babel.swift.rules;
+package com.babel.swift.rules.MT900.MTRules;
 
+import com.babel.swift.rules.IMTRule;
 import com.prowidesoftware.swift.model.field.Field32A;
 import iso.std.iso._20022.tech.xsd.camt_054_001_02.ActiveOrHistoricCurrencyAndAmount;
 import org.springframework.util.StringUtils;
 
 import java.math.BigDecimal;
 
-public class CurrencyAndAmountFromField32A implements IRule {
+public class CurrencyAndAmountFromField32A implements IMTRule {
 
     @Override
     public Object apply(Object mtField) {

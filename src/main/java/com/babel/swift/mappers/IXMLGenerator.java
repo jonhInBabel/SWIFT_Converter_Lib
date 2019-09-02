@@ -1,4 +1,4 @@
-package com.babel.swift.mappingfields;
+package com.babel.swift.mappers;
 
 import com.babel.swift.exceptions.MTConversionException;
 
