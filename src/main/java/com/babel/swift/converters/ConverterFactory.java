@@ -13,9 +13,7 @@ import com.prowidesoftware.swift.model.mx.AbstractMX;
 
 public class ConverterFactory {
 
-    public ConverterFactory() { }
-
-    public I_MT_MX_Converter getConverter(AbstractMT mt) throws MTTypeNotFoundException{
+    public static I_MT_MX_Converter getConverter(AbstractMT mt) throws MTTypeNotFoundException{
         String messageType = mt.getMessageType();
         EnumMTType enumMTType = EnumMTType.fromString( messageType );
         switch  ( enumMTType ) {
@@ -34,7 +32,7 @@ public class ConverterFactory {
         }
     }
 
-    public I_MT_MX_Converter getConverter(AbstractMX mx) throws MXTypeNotFoundException {
+    public static I_MT_MX_Converter getConverter(AbstractMX mx) throws MXTypeNotFoundException {
         // TODO: implement logic here to select the correct converter based on AbstractMX message
         return new MT900Converter();
     }

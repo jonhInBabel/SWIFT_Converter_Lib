@@ -22,6 +22,7 @@ public class MT900_Mapper extends AMapper {
 	protected void applyMTRules(AbstractMT mtMessage) throws MTFieldParsingException {
 		MT900 mt900 = (MT900) mtMessage;
 		this.mxObject = new Document();
+		Document document = new Document();
 		/*
 			aqui componemos el objeto root de la clase obtenida a partir del xsd usando las reglas específicas
 		 */
@@ -48,6 +49,12 @@ public class MT900_Mapper extends AMapper {
 		debtorBicOrBei				= Field52A_Rules.getField20Value( mt900.getField52A() );
 		nameAndAddress				= Field52D_Rules.getField20Value( mt900.getField52D() );
 		additionalTransactionInfo	= Field72_Rules.getField20Value( mt900.getField72() );
+
+
+
+
+
+		this.mxObject = document;
 	}
 
 	/*	public String xmlGenerator()
@@ -60,12 +67,12 @@ public class MT900_Mapper extends AMapper {
 
 		}*/
 
-/*		public BankToCustomerDebitCreditNotificationV02 bkToCstmrDbtCdtNtfctn() throws DatatypeConfigurationException, ParseException {
+    /*		public BankToCustomerDebitCreditNotificationV02 bkToCstmrDbtCdtNtfctn() throws DatatypeConfigurationException, ParseException {
 
-			*//*
-			 * Los elementos se declaran null ya que de esa forma nos aseguramos de que sino hay valores para ese elemento
-			 * no se construya la etiqueta
-			 *//*
+
+			 // Los elementos se declaran null ya que de esa forma nos aseguramos de que sino hay valores para ese elemento
+			 // no se construya la etiqueta
+
 
 			//Svcr
 			FinancialInstitutionIdentification7 financialInstitutionIdentification7 = null;

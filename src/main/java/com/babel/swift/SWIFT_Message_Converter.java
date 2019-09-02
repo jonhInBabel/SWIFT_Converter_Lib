@@ -13,11 +13,8 @@ public class SWIFT_Message_Converter {
 
 	Logger log = Logger.getLogger( SWIFT_Message_Converter.class );
 	I_MT_MX_Converter converter;
-	ConverterFactory converterFactory;
 	
-	public SWIFT_Message_Converter() {
-		this.converterFactory = new ConverterFactory();
-	}
+	public SWIFT_Message_Converter() { }
 
 	/**
 	 * Devuelve la traducción de mensaje mt a mx con la última version existente?? o la ultima version que
@@ -33,13 +30,13 @@ public class SWIFT_Message_Converter {
 		} catch (IOException e) {
 			throw new MTParsingException();
 		}
-		this.converter = this.converterFactory.getConverter(mt);
+		this.converter = ConverterFactory.getConverter(mt);
 		return this.converter.mt_to_mx(mt, mxVersion);
 	}
 	
 	public String mx_to_mt( String mxMessage ) throws MXTypeNotFoundException, MXConversionException {
 		AbstractMX mx = AbstractMX.parse(mxMessage, null);
-		this.converter = this.converterFactory.getConverter(mx);
+		this.converter = ConverterFactory.getConverter(mx);
 		return this.converter.mx_to_mt(mx);
 	}
 	
