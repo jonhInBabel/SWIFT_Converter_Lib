@@ -21,7 +21,6 @@ public class MT900_Mapper extends AMapper {
 	@Override
 	protected void applyMTRules(AbstractMT mtMessage) throws MTFieldParsingException {
 		MT900 mt900 = (MT900) mtMessage;
-		this.mxObject = new Document();
 		Document document = new Document();
 		/*
 			aqui componemos el objeto root de la clase obtenida a partir del xsd usando las reglas específicas

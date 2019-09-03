@@ -34,7 +34,6 @@ public class DateFromField32A implements IMTRule {
 			}
 
 		}
-
 		return dateAndDateTimeChoice;
 	}
 }
