@@ -13,12 +13,12 @@ import com.babel.swift.mappers.MT900.MT900_Mapper;
 import com.prowidesoftware.swift.model.mt.AbstractMT;
 import com.prowidesoftware.swift.model.mt.mt9xx.MT900;
 
-public class MT900Converter implements I_MT_MX_Converter {
+public class MT900_Camt054_Converter implements I_MT_MX_Converter {
 
-	Logger log = Logger.getLogger( MT900Converter.class );
+	Logger log = Logger.getLogger( MT900_Camt054_Converter.class );
 	AMapper mapper;
 
-	public MT900Converter () {
+	public MT900_Camt054_Converter() {
 		this.mapper =  new MT900_Mapper();
 	}
 	

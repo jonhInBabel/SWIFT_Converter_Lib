@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d36e4ec3-80ee-470b-9190-c2e32408ce80" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/babel/swift/SWIFT_Message_Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/babel/swift/SWIFT_Message_Converter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/babel/swift/converters/ConverterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/babel/swift/converters/ConverterFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/babel/swift/exceptions/MXFieldParsingException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/babel/swift/exceptions/MXFieldParsingException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/babel/swift/mappers/AMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/babel/swift/mappers/AMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/babel/swift/mappers/MT900/MT900_Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/babel/swift/mappers/MT900/MT900_Mapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swift.iml" beforeDir="false" afterPath="$PROJECT_DIR$/swift.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +21,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="swift/invalid/Spring" />
+    </ignored-facets>
   </component>
   <component name="ProjectId" id="1Q8XrhZraxbJZzNnLcoru6XdVhi" />
   <component name="PropertiesComponent">
