@@ -37,8 +37,8 @@ public class MT900_Mapper extends AMapper {
 		List<String> 	nameAndAddress;
 		String 			additionalTransactionInfo;
 
-		bic 						= LogicalTerminalAddress_Rules.getBIC( mt900.getLogicalTerminal() );
-		bicOrBei 					= InputDestinationAddress_Rules.getBICOrBEI( mt900.getReceiver() );
+	bic 						= LogicalTerminalAddress_Rules.getBIC( mt900.getLogicalTerminal() );
+	bicOrBei 					= InputDestinationAddress_Rules.getBICOrBEI( mt900.getReceiver() );
 		messageId					= Field20_Rules.getField20Value( mt900.getField20() );
 		identification 				= Field20_Rules.getField20Value( mt900.getField20() );
 		endToEndIdentification 		= Field21_Rules.getField21Value( mt900.getField21() );
@@ -47,8 +47,8 @@ public class MT900_Mapper extends AMapper {
 		DateAndDateTimeChoice dateAndDateTimeChoice = (DateAndDateTimeChoice) new DateFromField32A().apply( mt900.getField32A() );
 		ActiveOrHistoricCurrencyAndAmount activeOrHistoricCurrencyAndAmount  = (ActiveOrHistoricCurrencyAndAmount) new CurrencyAndAmountFromField32A().apply(mt900.getField32A());
 		debtorBicOrBei				= Field52A_Rules.getField20Value( mt900.getField52A() );
-		nameAndAddress				= Field52D_Rules.getField20Value( mt900.getField52D() );
-		additionalTransactionInfo	= Field72_Rules.getField20Value( mt900.getField72() );
+	nameAndAddress				= Field52D_Rules.getField20Value( mt900.getField52D() );
+	additionalTransactionInfo	= Field72_Rules.getField20Value( mt900.getField72() );
 
 
 
