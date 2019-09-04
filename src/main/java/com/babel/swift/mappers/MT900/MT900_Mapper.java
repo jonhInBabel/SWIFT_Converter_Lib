@@ -10,6 +10,7 @@ import com.prowidesoftware.swift.model.mx.AbstractMX;
 import iso.std.iso._20022.tech.xsd.camt_054_001_02.*;
 import org.springframework.util.StringUtils;
 
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,7 +23,7 @@ public class MT900_Mapper extends AMapper {
     }
 
     @Override
-    protected void applyMTRules(AbstractMT mtMessage) throws MTFieldParsingException {
+    protected void applyMTRules(AbstractMT mtMessage) throws MTFieldParsingException, ParseException {
         mt900 = (MT900) mtMessage;
         Document document = new Document();
 
@@ -104,7 +105,7 @@ public class MT900_Mapper extends AMapper {
     private TransactionParty2 transactionParty2() throws MTFieldParsingException {
 
 
-        PostalAddress6 postalAddress6 = (PostalAddress6) new AddressLinesFromField52D().apply(mt900.getField72());
+        PostalAddress6 postalAddress6 = (PostalAddress6) new AddressLinesFromField52D().apply(mt900.getField52D());
         String name = (String) new NameFromField52D().apply(mt900.getField52D());
 
         //Dbtr
@@ -168,7 +169,7 @@ public class MT900_Mapper extends AMapper {
 
     }
 
-    private List<AccountNotification2> accountNotification2() throws MTFieldParsingException {
+    private List<AccountNotification2> accountNotification2() throws MTFieldParsingException, ParseException {
 
         //ValDt
         DateAndDateTimeChoice dateAndDateTimeChoice = (DateAndDateTimeChoice) new DateFromField32A().apply(mt900.getField32A());
@@ -215,7 +216,7 @@ public class MT900_Mapper extends AMapper {
 
     }
 
-    private BankToCustomerDebitCreditNotificationV02 bankToCustomerDebitCreditNotificationV02() throws MTFieldParsingException {
+    private BankToCustomerDebitCreditNotificationV02 bankToCustomerDebitCreditNotificationV02() throws MTFieldParsingException, ParseException {
 
 
         List<AccountNotification2> accountNotification2s = accountNotification2();

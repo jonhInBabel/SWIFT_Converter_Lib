@@ -11,17 +11,24 @@ public class CurrencyAndAmountFromField32A implements IMTRule {
 
     @Override
     public Object apply(Object mtField) {
-        Field32A field32A = (Field32A) mtField;
+        
         ActiveOrHistoricCurrencyAndAmount activeOrHistoricCurrencyAndAmount = null;
+        
+        if(!StringUtils.isEmpty(mtField)) {
+        	
+        	Field32A field32A = (Field32A) mtField;
 
-        if( !StringUtils.isEmpty( field32A.getCurrency() ) &&
-                !StringUtils.isEmpty( field32A.getAmount() ) ) {
+            if( !StringUtils.isEmpty( field32A.getCurrency() ) &&
+                    !StringUtils.isEmpty( field32A.getAmount() ) ) {
 
-            activeOrHistoricCurrencyAndAmount = new ActiveOrHistoricCurrencyAndAmount();
-            activeOrHistoricCurrencyAndAmount.setCcy( field32A.getCurrency() );
-            BigDecimal amount = BigDecimal.valueOf(Double.parseDouble(field32A.getAmount()));
-            activeOrHistoricCurrencyAndAmount.setValue( amount );
+                activeOrHistoricCurrencyAndAmount = new ActiveOrHistoricCurrencyAndAmount();
+                activeOrHistoricCurrencyAndAmount.setCcy( field32A.getCurrency() );
+                BigDecimal amount = field32A.getAmountBigDecimal();
+                activeOrHistoricCurrencyAndAmount.setValue( amount );
+            }
+        	
         }
+        
 
         return activeOrHistoricCurrencyAndAmount;
     }

@@ -11,11 +11,11 @@ public class OtherIdentificationFromField25 implements IMTRule {
     @Override
     public Object apply(Object mtField)
     {
-        Field25 field25 = (Field25) mtField;
+       
         GenericAccountIdentification1 accountIdentification1 = null;
-        if( !StringUtils.isEmpty( field25.getValue() ) )
+        if( !StringUtils.isEmpty( mtField ) )
         {
-
+        	 Field25 field25 = (Field25) mtField;
             accountIdentification1 = new GenericAccountIdentification1();
             accountIdentification1.setId( field25.getValue() );
 

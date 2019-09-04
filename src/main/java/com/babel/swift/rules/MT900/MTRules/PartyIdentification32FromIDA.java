@@ -9,34 +9,19 @@ import org.springframework.util.StringUtils;
 
 public class PartyIdentification32FromIDA implements IMTRule {
 
-	/*
-	public static String getBICOrBEI( String receiver ) {
-
-		String value = null;
-		if( receiver != null && receiver.length() >= 10 ) {
-//TODO			if( isBIC( receiver.substring(0, 8) + receiver.substring(9) ) ||
-//TODO				isBEI( receiver.substring(0, 8) + receiver.substring(9)	) {
-
-				value = receiver.substring(0, 8) + receiver.substring(9);
-//			}
-		}
-
-		return value;
-
-	}
-	*/
-
+	
 	@Override
 	public Object apply(Object mtField) throws MTFieldParsingException {
-		String receiver = (String) mtField;
+		
 
 		//Ownr
 		Party6Choice party6Choice = null;
 		PartyIdentification32 partyIdentification32 = null;
 		OrganisationIdentification4 organisationIdentification4 = null;
 
-		if( !StringUtils.isEmpty( receiver ) ) {
+		if( !StringUtils.isEmpty( mtField ) ) {
 
+			String receiver = (String) mtField;
 			String value = null;
 			if( receiver != null && receiver.length() >= 10 ) {
 //TODO			if( isBIC( receiver.substring(0, 8) + receiver.substring(9) ) ||

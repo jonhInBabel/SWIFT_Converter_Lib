@@ -27,13 +27,14 @@ public class AddressLinesFromField52D implements IMTRule {
 
     @Override
     public Object apply(Object mtField) throws MTFieldParsingException {
-        Field52D field52D = (Field52D) mtField;
+       
 
         //Ntfctn
         List<String> adrLine = null;
         PostalAddress6 pstlAdr = null;
 
-        if( !StringUtils.isEmpty( field52D ) ) {
+        if( !StringUtils.isEmpty( mtField ) ) {
+        	 Field52D field52D = (Field52D) mtField;
             adrLine = new ArrayList<String>();
             adrLine.add(field52D.getNameAndAddressLine2());
             adrLine.add(field52D.getNameAndAddressLine3());

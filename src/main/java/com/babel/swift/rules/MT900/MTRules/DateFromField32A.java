@@ -1,7 +1,5 @@
 package com.babel.swift.rules.MT900.MTRules;
 
-import java.text.ParseException;
-
 import com.babel.swift.exceptions.MTFieldParsingException;
 import com.babel.swift.rules.IMTRule;
 import com.babel.swift.support.Utils;
@@ -10,21 +8,24 @@ import iso.std.iso._20022.tech.xsd.camt_054_001_02.DateAndDateTimeChoice;
 import org.springframework.util.StringUtils;
 
 import javax.xml.datatype.DatatypeConfigurationException;
+import java.text.ParseException;
 
 
 public class DateFromField32A implements IMTRule {
 
 	@Override
-	public Object apply(Object mtField) throws MTFieldParsingException {
-		Field32A field32A = (Field32A) mtField;
+	public Object apply(Object mtField) throws MTFieldParsingException, ParseException {
+		
 
 		DateAndDateTimeChoice dateAndDateTimeChoice = null;
-		if( !StringUtils.isEmpty( field32A.getDate() ) ) {
+		if( !StringUtils.isEmpty( mtField ) ) {
 
+			Field32A field32A = (Field32A) mtField;
 			dateAndDateTimeChoice = new DateAndDateTimeChoice();
 
+			String date = Utils.dateSimpleFormat(field32A.getDate());
 			try {
-				dateAndDateTimeChoice.setDt( Utils.stringToXMLGregorianCalendar( field32A.getDate() ) );
+				dateAndDateTimeChoice.setDt( Utils.stringToXMLGregorianCalendar( date ) );
 			} catch (DatatypeConfigurationException e) {
 				e.printStackTrace();
 				throw new MTFieldParsingException(e.getMessage());

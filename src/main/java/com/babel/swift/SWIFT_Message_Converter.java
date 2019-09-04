@@ -1,6 +1,7 @@
 package com.babel.swift;
 
 import java.io.IOException;
+import java.text.ParseException;
 
 import com.babel.swift.converters.ConverterFactory;
 import com.babel.swift.converters.I_MT_MX_Converter;
@@ -22,8 +23,9 @@ public class SWIFT_Message_Converter {
 	 * @param mtMessage
 	 * @param mxVersion
 	 * @return
+	 * @throws ParseException 
 	 */
-	public String mt_to_mx( String mtMessage, String mxVersion ) throws MTTypeNotFoundException, MTParsingException, MTConversionException {
+	public String mt_to_mx( String mtMessage, String mxVersion ) throws MTTypeNotFoundException, MTParsingException, MTConversionException, ParseException {
 		AbstractMT mt;
 		try {
 			mt = AbstractMT.parse( mtMessage );

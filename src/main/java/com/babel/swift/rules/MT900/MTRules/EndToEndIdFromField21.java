@@ -9,10 +9,11 @@ import org.springframework.util.StringUtils;
 public class EndToEndIdFromField21 implements IMTRule {
     @Override
     public Object apply(Object mtField) throws MTFieldParsingException {
-        Field21 field21 = (Field21) mtField;
-
+       
         TransactionReferences2 transactionReferences2 = null;
-        if( !StringUtils.isEmpty( field21.getValue()) ) {
+        if( !StringUtils.isEmpty( mtField) ) {
+
+        	 Field21 field21 = (Field21) mtField;
 
             transactionReferences2 = new TransactionReferences2();
             transactionReferences2.setEndToEndId( field21.getValue());

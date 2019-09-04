@@ -13,16 +13,15 @@ public class IbanFromField25 implements IMTRule {
     @Override
     public Object apply(Object mtField)
     {
-        Field25 field25 = (Field25) mtField;
-        if (!StringUtils.isEmpty(field25.getValue())) {
-            if (field25.getValue().length() <= ACCOUNT_IDENTIFICATION_MAX_NUMBER
-//TODO					&& !( isIBAN( field25.getValue() ) )
-            )
+        String iban = null;
+        if (!StringUtils.isEmpty(mtField)) {
+        	Field25 field25 = (Field25) mtField;
+            if (field25.getValue().length() <= ACCOUNT_IDENTIFICATION_MAX_NUMBER )
             {
-                field25.getValue();
+                iban = field25.getValue();
             }
         }
-        return field25.getValue();
+        return iban;
     }
 }
 

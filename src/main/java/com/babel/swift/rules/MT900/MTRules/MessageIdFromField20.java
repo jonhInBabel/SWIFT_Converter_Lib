@@ -10,10 +10,11 @@ public class MessageIdFromField20 implements IMTRule {
 
     @Override
     public Object apply(Object mtField) throws MTFieldParsingException {
-        Field20 field20 = (Field20) mtField;
+        
 
         GroupHeader42 grpHdr = null;
-        if (!StringUtils.isEmpty(field20.getValue())) {
+        if (!StringUtils.isEmpty(mtField)) {
+        	Field20 field20 = (Field20) mtField;
             grpHdr = new GroupHeader42();
             grpHdr.setMsgId(field20.getValue());
         }

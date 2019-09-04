@@ -6,6 +6,9 @@ import com.babel.swift.exceptions.MXConversionException;
 import com.babel.swift.mappers.AMapper;
 import com.babel.swift.support.EnumMTVersion;
 import com.prowidesoftware.swift.model.mx.AbstractMX;
+
+import java.text.ParseException;
+
 import org.apache.log4j.Logger;
 
 import com.babel.swift.exceptions.MXVersionNotFoundException;
@@ -22,7 +25,7 @@ public class MT900_Camt054_Converter implements I_MT_MX_Converter {
 		this.mapper =  new MT900_Mapper();
 	}
 	
-	public String mt_to_mx( AbstractMT mt, String mxVersion ) throws MTConversionException {
+	public String mt_to_mx( AbstractMT mt, String mxVersion ) throws MTConversionException, ParseException {
 		
 		MT900 mt900 = ( MT900 ) mt;
 		EnumMTVersion enumMXVersion = EnumMTVersion.fromString( mxVersion );

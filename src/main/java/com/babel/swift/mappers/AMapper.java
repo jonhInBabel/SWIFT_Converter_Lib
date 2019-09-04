@@ -1,5 +1,7 @@
 package com.babel.swift.mappers;
 
+import java.text.ParseException;
+
 import com.babel.swift.exceptions.MTConversionException;
 import com.babel.swift.exceptions.MTFieldParsingException;
 import com.babel.swift.exceptions.MXConversionException;
@@ -16,7 +18,7 @@ public abstract class AMapper {
         this.xmlGen = xmlGen;
     }
 
-    public String convert2MX(AbstractMT mtMessage) throws MTConversionException {
+    public String convert2MX(AbstractMT mtMessage) throws MTConversionException, ParseException {
         this.applyMTRules(mtMessage);
         return this.xmlGen.getXML(this.mxObject);
     }
@@ -27,7 +29,7 @@ public abstract class AMapper {
         return null;
     }
 
-    abstract protected void applyMTRules(AbstractMT mtMessage) throws MTFieldParsingException;
+    abstract protected void applyMTRules(AbstractMT mtMessage) throws MTFieldParsingException, ParseException;
 
     abstract protected void applyMXRules(AbstractMX mxMessage) throws MXFieldParsingException;
 }

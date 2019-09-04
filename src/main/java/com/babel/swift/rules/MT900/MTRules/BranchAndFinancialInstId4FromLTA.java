@@ -24,11 +24,13 @@ public class BranchAndFinancialInstId4FromLTA implements IMTRule {
 
 	@Override
 	public Object apply(Object mtField) throws MTFieldParsingException {
-		String logicalTerminalAddress = (String) mtField;
+		
 
 		//Svcr
 		FinancialInstitutionIdentification7 financialInstitutionIdentification7 = null;
-		if( !StringUtils.isEmpty( logicalTerminalAddress ) ){
+		if( !StringUtils.isEmpty( mtField ) ){
+			
+			String logicalTerminalAddress = (String) mtField;
 
 			String value = null;
 			if( logicalTerminalAddress != null && logicalTerminalAddress.length() >= 10 ) {

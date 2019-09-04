@@ -19,13 +19,15 @@ public class AdditionalTransactionInfFromField72 implements IMTRule {
 
 	@Override
 	public Object apply(Object mtField) throws MTFieldParsingException {
-		Field72 field72 = (Field72) mtField;
-
-		if ( !StringUtils.isEmpty( field72 ) ) {
-			return field72.getNarrative();
+		
+		String narrative= null;
+		
+		if ( !StringUtils.isEmpty( mtField ) ) {
+			Field72 field72 = (Field72) mtField;
+			narrative= field72.getNarrative();
 		}
 
-		return null;
+		return narrative;
 	}
 	
 }
