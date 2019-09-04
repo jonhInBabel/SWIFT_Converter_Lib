@@ -1,8 +1,10 @@
 package com.babel.swift.converters.MT940_Cam053;
 
 import com.babel.swift.converters.I_MT_MX_Converter;
+import com.babel.swift.exceptions.MXConversionException;
 import com.babel.swift.exceptions.MXVersionNotFoundException;
 import com.prowidesoftware.swift.model.mt.AbstractMT;
+import com.prowidesoftware.swift.model.mx.AbstractMX;
 
 
 public class MT940_Camt053_Converter implements I_MT_MX_Converter {
@@ -13,6 +15,12 @@ public class MT940_Camt053_Converter implements I_MT_MX_Converter {
 	}
 
 	public String mx_to_mt( String mxMessage ) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String mx_to_mt(AbstractMX mx) throws MXConversionException {
 		// TODO Auto-generated method stub
 		return null;
 	}
