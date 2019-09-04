@@ -34,6 +34,9 @@ public class MT900_Mapper extends AMapper {
         GroupHeader42 messageId = (GroupHeader42) new MessageIdFromField20().apply(mt900.getField20());
         String identification = (String) new IdentificationFromField20().apply(mt900.getField20());
         TransactionReferences2 endToEndIdentification = (TransactionReferences2) new EndToEndIdFromField21().apply(mt900.getField21());
+        String iban = (String) new IbanFromField25().apply(mt900.getField25());
+        GenericAccountIdentification1 genericAccountIdentification1= (GenericAccountIdentification1) new OtherIdentificationFromField25().apply( mt900.getField25() );
+        Party6Choice party6Choice1	= (Party6Choice) new OrganisationFromField52A().apply( mt900.getField52A() );
 
         this.mxObject = document;
     }
