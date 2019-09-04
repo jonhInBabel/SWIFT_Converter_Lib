@@ -12,13 +12,13 @@ public class EndToEndIdFromField21 implements IMTRule {
         Field21 field21 = (Field21) mtField;
 
         TransactionReferences2 transactionReferences2 = null;
-        if( !StringUtils.isEmpty( field21.getValue()/*amt054V00102_from_mt900_mapping.getEndToEndIdentification() */) ) {
+        if( !StringUtils.isEmpty( field21.getValue()) ) {
 
             transactionReferences2 = new TransactionReferences2();
-            transactionReferences2.setEndToEndId( field21.getValue()/*camt054V00102_from_mt900_mapping.getEndToEndIdentification() */);
+            transactionReferences2.setEndToEndId( field21.getValue());
 
         }
 
-        return null;
+        return transactionReferences2;
     }
 }

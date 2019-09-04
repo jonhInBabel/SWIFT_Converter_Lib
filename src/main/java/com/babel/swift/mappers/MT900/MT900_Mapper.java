@@ -8,9 +8,7 @@ import com.babel.swift.rules.MT900.MTRules.*;
 import com.prowidesoftware.swift.model.mt.AbstractMT;
 import com.prowidesoftware.swift.model.mt.mt9xx.MT900;
 import com.prowidesoftware.swift.model.mx.AbstractMX;
-import iso.std.iso._20022.tech.xsd.camt_054_001_02.ActiveOrHistoricCurrencyAndAmount;
-import iso.std.iso._20022.tech.xsd.camt_054_001_02.DateAndDateTimeChoice;
-import iso.std.iso._20022.tech.xsd.camt_054_001_02.Document;
+import iso.std.iso._20022.tech.xsd.camt_054_001_02.*;
 
 public class MT900_Mapper extends AMapper {
 
@@ -26,33 +24,11 @@ public class MT900_Mapper extends AMapper {
 		/*
 			aqui componemos el objeto root de la clase obtenida a partir del xsd usando las reglas específicas
 		 */
-		String 			bic;
-		String 			bicOrBei;
-		String 			messageId;
-		String 			identification;
-		String 			endToEndIdentification;
-		String 			iban;
-		String 			otherId;
-		String 			debtorBicOrBei;
-		List<String> 	nameAndAddress;
-		String 			additionalTransactionInfo;
-
-		bic 						= LogicalTerminalAddress_Rules.getBIC( mt900.getLogicalTerminal() );
-		bicOrBei 					= InputDestinationAddress_Rules.getBICOrBEI( mt900.getReceiver() );
-		messageId					= Field20_Rules.getField20Value( mt900.getField20() );
-		identification 				= Field20_Rules.getField20Value( mt900.getField20() );
-		endToEndIdentification 		= Field21_Rules.getField21Value( mt900.getField21() );
-		iban						= Field25_Rules.getIBAN( mt900.getField25() );
-		otherId						= Field25_Rules.getOtherIdentification( mt900.getField25() );
+		GroupHeader42 messageId						= (GroupHeader42) new MessageIdFromField20().apply(mt900.getField20());
+		String identification 						= (String) new IdentificationFromField20().apply(mt900.getField20());
+		TransactionInterest2 endToEndIdentification = (TransactionInterest2) new EndToEndIdFromField21().apply(mt900.getField21());
 		DateAndDateTimeChoice dateAndDateTimeChoice = (DateAndDateTimeChoice) new DateFromField32A().apply( mt900.getField32A() );
 		ActiveOrHistoricCurrencyAndAmount activeOrHistoricCurrencyAndAmount  = (ActiveOrHistoricCurrencyAndAmount) new CurrencyAndAmountFromField32A().apply(mt900.getField32A());
-		debtorBicOrBei				= Field52A_Rules.getField20Value( mt900.getField52A() );
-		nameAndAddress				= Field52D_Rules.getField20Value( mt900.getField52D() );
-		additionalTransactionInfo	= Field72_Rules.getField20Value( mt900.getField72() );
-
-
-
-
 
 		this.mxObject = document;
 	}
