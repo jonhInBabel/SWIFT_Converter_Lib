@@ -2,7 +2,7 @@ package com.babel.swift.converters;
 
 import com.babel.swift.converters.MT103_Pac008.MT103_Pacs008_Converter;
 import com.babel.swift.converters.MT202_Pac009.MT202_Pacs009_Converter;
-import com.babel.swift.converters.MT900.MT900_Camt054_Converter;
+import com.babel.swift.converters.MT900_Camt054.MT900_Camt054_Converter;
 import com.babel.swift.converters.MT910_Cam054.MT910_Camt054_Converter;
 import com.babel.swift.converters.MT940_Cam053.MT940_Camt053_Converter;
 import com.babel.swift.exceptions.MTTypeNotFoundException;

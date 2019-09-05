@@ -1,13 +1,15 @@
 package com.babel.swift.rules.MT900.MTRules;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.util.StringUtils;
+
 import com.babel.swift.exceptions.MTFieldParsingException;
 import com.babel.swift.rules.IMTRule;
 import com.prowidesoftware.swift.model.field.Field52D;
-import iso.std.iso._20022.tech.xsd.camt_054_001_02.PostalAddress6;
-import org.springframework.util.StringUtils;
 
-import java.util.ArrayList;
-import java.util.List;
+import iso.std.iso._20022.tech.xsd.camt_054_001_02.PostalAddress6;
 
 public class AddressLinesFromField52D implements IMTRule {
 
@@ -32,14 +34,19 @@ public class AddressLinesFromField52D implements IMTRule {
         //Ntfctn
         List<String> adrLine = null;
         PostalAddress6 pstlAdr = null;
-
         if( !StringUtils.isEmpty( mtField ) ) {
         	 Field52D field52D = (Field52D) mtField;
-            adrLine = new ArrayList<String>();
-            adrLine.add(field52D.getNameAndAddressLine2());
-            adrLine.add(field52D.getNameAndAddressLine3());
-            adrLine.add(field52D.getNameAndAddressLine4());
-            if(!adrLine.isEmpty()) {
+
+            if(!StringUtils.isEmpty(field52D.getNameAndAddressLine2()) ||
+            		!StringUtils.isEmpty(field52D.getNameAndAddressLine3()) ||
+            		!StringUtils.isEmpty(field52D.getNameAndAddressLine4())) {
+                adrLine = new ArrayList<String>();
+                adrLine.add(field52D.getNameAndAddressLine2());
+                adrLine.add(field52D.getNameAndAddressLine3());
+                adrLine.add(field52D.getNameAndAddressLine4());
+            }
+
+            if(adrLine != null) {
                 pstlAdr = new PostalAddress6();
                 pstlAdr.getAdrLine().addAll(adrLine);
             }
