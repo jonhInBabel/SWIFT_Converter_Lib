@@ -25,7 +25,7 @@ public class SWIFT_Message_Converter {
 	 * @return
 	 * @throws ParseException 
 	 */
-	public String mt_to_mx( String mtMessage, String mxVersion ) throws MTTypeNotFoundException, MTParsingException, MTConversionException, ParseException {
+	public String mt_to_mx( String mtMessage, String mxVersion ) throws MTTypeNotFoundException, MTParsingException, MTConversionException {
 		AbstractMT mt;
 		try {
 			mt = AbstractMT.parse( mtMessage );

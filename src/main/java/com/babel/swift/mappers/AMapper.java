@@ -18,7 +18,7 @@ public abstract class AMapper {
         this.xmlGen = xmlGen;
     }
 
-    public String convert2MX(AbstractMT mtMessage) throws MTConversionException, ParseException {
+    public String convert2MX(AbstractMT mtMessage) throws MTConversionException {
         this.applyMTRules(mtMessage);
         return this.xmlGen.getXML(this.mxObject);
     }
@@ -29,7 +29,7 @@ public abstract class AMapper {
         return null;
     }
 
-    abstract protected void applyMTRules(AbstractMT mtMessage) throws MTFieldParsingException, ParseException;
+    abstract protected void applyMTRules(AbstractMT mtMessage) throws MTFieldParsingException;
 
     abstract protected void applyMXRules(AbstractMX mxMessage) throws MXFieldParsingException;
 }
