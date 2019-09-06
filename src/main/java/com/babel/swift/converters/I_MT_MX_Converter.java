@@ -10,7 +10,7 @@ import com.prowidesoftware.swift.model.mx.AbstractMX;
 
 public interface I_MT_MX_Converter {
 
-	String mt_to_mx( AbstractMT mt, String mxVersion ) throws MTConversionException, ParseException;
+	String mt_to_mx( AbstractMT mt, String mxVersion ) throws MTConversionException;
 	
 	String mx_to_mt( AbstractMX mx ) throws MXConversionException;
 	

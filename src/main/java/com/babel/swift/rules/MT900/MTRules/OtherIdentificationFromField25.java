@@ -1,4 +1,5 @@
 package com.babel.swift.rules.MT900.MTRules;
+import com.babel.swift.exceptions.MTFieldParsingException;
 import com.babel.swift.rules.IMTRule;
 import com.prowidesoftware.swift.model.field.Field25;
 
@@ -9,7 +10,7 @@ import org.springframework.util.StringUtils;
 public class OtherIdentificationFromField25 implements IMTRule {
 
     @Override
-    public Object apply(Object mtField)
+    public Object apply(Object mtField) throws MTFieldParsingException
     {
        
         GenericAccountIdentification1 accountIdentification1 = null;

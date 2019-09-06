@@ -23,7 +23,7 @@ public class MT900_Mapper extends AMapper {
     }
 
     @Override
-    protected void applyMTRules(AbstractMT mtMessage) throws MTFieldParsingException, ParseException {
+    protected void applyMTRules(AbstractMT mtMessage) throws MTFieldParsingException {
         mt900 = (MT900) mtMessage;
         Document document = new Document();
 
@@ -62,7 +62,7 @@ public class MT900_Mapper extends AMapper {
     }
 
     //Id   inside Acct
-    private AccountIdentification4Choice accountIdentification4Choice(){
+    private AccountIdentification4Choice accountIdentification4Choice() throws MTFieldParsingException{
 
 
         //Othr
@@ -169,7 +169,7 @@ public class MT900_Mapper extends AMapper {
 
     }
 
-    private List<AccountNotification2> accountNotification2() throws MTFieldParsingException, ParseException {
+    private List<AccountNotification2> accountNotification2() throws MTFieldParsingException {
 
         //ValDt
         DateAndDateTimeChoice dateAndDateTimeChoice = (DateAndDateTimeChoice) new DateFromField32A().apply(mt900.getField32A());
@@ -216,7 +216,7 @@ public class MT900_Mapper extends AMapper {
 
     }
 
-    private BankToCustomerDebitCreditNotificationV02 bankToCustomerDebitCreditNotificationV02() throws MTFieldParsingException, ParseException {
+    private BankToCustomerDebitCreditNotificationV02 bankToCustomerDebitCreditNotificationV02() throws MTFieldParsingException {
 
 
         List<AccountNotification2> accountNotification2s = accountNotification2();

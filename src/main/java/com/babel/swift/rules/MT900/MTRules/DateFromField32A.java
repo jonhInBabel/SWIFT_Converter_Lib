@@ -10,12 +10,10 @@ import org.springframework.util.StringUtils;
 import javax.xml.datatype.DatatypeConfigurationException;
 import java.text.ParseException;
 
-
 public class DateFromField32A implements IMTRule {
 
 	@Override
-	public Object apply(Object mtField) throws MTFieldParsingException, ParseException {
-		
+	public Object apply(Object mtField) throws MTFieldParsingException {
 
 		DateAndDateTimeChoice dateAndDateTimeChoice = null;
 		if( !StringUtils.isEmpty( mtField ) ) {
@@ -23,8 +21,8 @@ public class DateFromField32A implements IMTRule {
 			Field32A field32A = (Field32A) mtField;
 			dateAndDateTimeChoice = new DateAndDateTimeChoice();
 
-			String date = Utils.dateSimpleFormat(field32A.getDate());
 			try {
+				String date = Utils.dateSimpleFormat(field32A.getDate());
 				dateAndDateTimeChoice.setDt( Utils.stringToXMLGregorianCalendar( date ) );
 			} catch (DatatypeConfigurationException e) {
 				e.printStackTrace();

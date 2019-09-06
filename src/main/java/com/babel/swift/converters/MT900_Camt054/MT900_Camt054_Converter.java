@@ -23,7 +23,7 @@ public class MT900_Camt054_Converter implements I_MT_MX_Converter {
 		this.mapper =  new MT900_Mapper();
 	}
 	
-	public String mt_to_mx( AbstractMT mt, String mxVersion ) throws MTConversionException, ParseException {
+	public String mt_to_mx( AbstractMT mt, String mxVersion ) throws MTConversionException {
 		
 		MT900 mt900 = ( MT900 ) mt;
 		EnumMTVersion enumMXVersion = EnumMTVersion.fromString( mxVersion );
