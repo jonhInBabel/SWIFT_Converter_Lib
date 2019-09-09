@@ -1,20 +1,16 @@
-package com.babel.swift.mappers.MT900;
+package com.babel.swift.mappers.MT_Mappers.MT900;
 
 import com.babel.swift.exceptions.MTFieldParsingException;
-import com.babel.swift.exceptions.MXFieldParsingException;
-import com.babel.swift.mappers.AMapper;
+import com.babel.swift.mappers.MT_Mappers.AMTMapper;
 import com.babel.swift.rules.MT900.MTRules.*;
 import com.prowidesoftware.swift.model.mt.AbstractMT;
 import com.prowidesoftware.swift.model.mt.mt9xx.MT900;
-import com.prowidesoftware.swift.model.mx.AbstractMX;
 import iso.std.iso._20022.tech.xsd.camt_054_001_02.*;
 import org.springframework.util.StringUtils;
-
-import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MT900_Mapper extends AMapper {
+public class MT900_Mapper extends AMTMapper {
 
     MT900 mt900;
 
@@ -34,11 +30,6 @@ public class MT900_Mapper extends AMapper {
 
 
         this.mxObject = document;
-    }
-
-    @Override
-    protected void applyMXRules(AbstractMX mxMessage) throws MXFieldParsingException {
-        // TODO:
     }
 
     //Svcr   inside Acct

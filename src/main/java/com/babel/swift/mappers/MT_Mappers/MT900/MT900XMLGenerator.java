@@ -1,7 +1,7 @@
-package com.babel.swift.mappers.MT900;
+package com.babel.swift.mappers.MT_Mappers.MT900;
 
 import com.babel.swift.exceptions.MTConversionException;
-import com.babel.swift.mappers.IXMLGenerator;
+import com.babel.swift.mappers.MT_Mappers.IXMLGenerator;
 import com.babel.swift.support.Constants;
 import iso.std.iso._20022.tech.xsd.camt_054_001_02.Document;
 

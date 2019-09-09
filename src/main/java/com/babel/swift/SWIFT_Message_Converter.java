@@ -2,9 +2,9 @@ package com.babel.swift;
 
 import java.io.IOException;
 import java.text.ParseException;
-
 import com.babel.swift.converters.ConverterFactory;
-import com.babel.swift.converters.I_MT_MX_Converter;
+import com.babel.swift.converters.MT_Converters.I_MT_Converter;
+import com.babel.swift.converters.MX_Converters.I_MX_Converter;
 import com.babel.swift.exceptions.*;
 import com.prowidesoftware.swift.model.mx.AbstractMX;
 import org.apache.log4j.Logger;
@@ -13,33 +13,38 @@ import com.prowidesoftware.swift.model.mt.AbstractMT;
 public class SWIFT_Message_Converter {
 
 	Logger log = Logger.getLogger( SWIFT_Message_Converter.class );
-	I_MT_MX_Converter converter;
+	I_MT_Converter mtConverter;
+	I_MX_Converter mxConverter;
 	
 	public SWIFT_Message_Converter() { }
 
 	/**
-	 * Devuelve la traducción de mensaje mt a mx con la última version existente?? o la ultima version que
-	 * queramos??
+	 * Devuelve la traducción de mensaje mt a mx
 	 * @param mtMessage
-	 * @param mxVersion
 	 * @return
 	 * @throws ParseException 
 	 */
-	public String mt_to_mx( String mtMessage, String mxVersion ) throws MTTypeNotFoundException, MTParsingException, MTConversionException {
+	public String mt_to_mx( String mtMessage ) throws MTTypeNotFoundException, MTParsingException, MTConversionException {
 		AbstractMT mt;
 		try {
 			mt = AbstractMT.parse( mtMessage );
 		} catch (IOException e) {
 			throw new MTParsingException();
 		}
-		this.converter = ConverterFactory.getConverter(mt);
-		return this.converter.mt_to_mx(mt, mxVersion);
+		this.mtConverter = ConverterFactory.getConverter(mt);
+		return this.mtConverter.mt_to_mx(mt);
 	}
-	
+
+	/**
+	 * Devuelve la traducción de mensaje mx a mt
+	 * @param mxMessage
+	 * @return
+	 * @throws ParseException
+	 */
 	public String mx_to_mt( String mxMessage ) throws MXTypeNotFoundException, MXConversionException {
 		AbstractMX mx = AbstractMX.parse(mxMessage, null);
-		this.converter = ConverterFactory.getConverter(mx);
-		return this.converter.mx_to_mt(mx);
+		this.mxConverter = ConverterFactory.getConverter(mx);
+		return this.mxConverter.mx_to_mt(mx);
 	}
 	
 }
