@@ -63,29 +63,29 @@
 <!-- 		<plugins> -->
 			
 <!-- 			<plugin> -->
-<!--                 <groupId>org.jvnet.jaxb2.maven2</groupId> -->
-<!--                 <artifactId>maven-jaxb2-plugin</artifactId> -->
-<!--                 <executions> -->
-<!--                     <execution> -->
-<!--                     <id>firstrun</id> -->
-<!--                        <goals> -->
-<!--                            <goal>generate</goal> -->
-<!--                        </goals> -->
-                  
-              
-<!--                <configuration> -->
-<!--                <generateDirectory>${project.basedir}/src/main/java/</generateDirectory> -->
-<!--                    <schemaDirectory>${project.basedir}/src/main/resources/xsd</schemaDirectory> -->
-<!--                    <schemaIncludes> -->
-<!--                        <include>*.xsd</include> -->
-                       
-<!--                    </schemaIncludes>    -->
-<!--                </configuration> -->
-<!--                 </execution> -->
-<!--                 </executions> -->
-                
-<!--             </plugin> -->
-            
+<!-- 	               <groupId>org.jvnet.jaxb2.maven2</groupId> -->
+<!-- 	               <artifactId>maven-jaxb2-plugin</artifactId> -->
+<!-- 	               <executions> -->
+<!-- 	                   <execution> -->
+<!-- 	                   <id>firstrun</id> -->
+<!-- 	                      <goals> -->
+<!-- 	                          <goal>generate</goal> -->
+<!-- 	                      </goals> -->
+	                 
+	             
+<!-- 	              <configuration> -->
+<!-- 	              <generateDirectory>${project.basedir}/src/main/java/</generateDirectory> -->
+<!-- 	                  <schemaDirectory>${project.basedir}/src/main/resources/xsd</schemaDirectory> -->
+<!-- 	                  <schemaIncludes> -->
+<!-- 	                      <include>*.xsd</include> -->
+	                      
+<!-- 	                  </schemaIncludes>    -->
+<!-- 	              </configuration> -->
+<!-- 	               </execution> -->
+<!-- 	               </executions> -->
+	               
+<!-- 	           </plugin> -->
+	           
 <!-- 		</plugins> -->
 <!-- 	</build> -->
   

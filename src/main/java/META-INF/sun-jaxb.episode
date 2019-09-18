@@ -5,369 +5,228 @@
 Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0 
 Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-Generado el: 2019.08.27 a las 02:08:28 PM CEST 
+Generado el: 2019.09.18 a las 08:30:14 AM CEST 
 
   -->
-  <bindings xmlns:tns="urn:iso:std:iso:20022:tech:xsd:camt.054.001.02" if-exists="true" scd="x-schema::tns">
+  <bindings xmlns:tns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.02" if-exists="true" scd="x-schema::tns">
     <schemaBindings map="false">
-      <package name="iso.std.iso._20022.tech.xsd.camt_054_001"/>
+      <package name="iso.std.iso._20022.tech.xsd.pacs_008_001"/>
     </schemaBindings>
     <bindings if-exists="true" scd="~tns:Document">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.Document"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.Document"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:AccountIdentification4Choice">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.AccountIdentification4Choice"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:AccountInterest2">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.AccountInterest2"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:AccountNotification2">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.AccountNotification2"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.AccountIdentification4Choice"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:AccountSchemeName1Choice">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.AccountSchemeName1Choice"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.AccountSchemeName1Choice"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ActiveCurrencyAndAmount">
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.ActiveCurrencyAndAmount"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:ActiveOrHistoricCurrencyAndAmount">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.ActiveOrHistoricCurrencyAndAmount"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:AlternateSecurityIdentification2">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.AlternateSecurityIdentification2"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:AmountAndCurrencyExchange3">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.AmountAndCurrencyExchange3"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:AmountAndCurrencyExchangeDetails3">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.AmountAndCurrencyExchangeDetails3"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:AmountAndCurrencyExchangeDetails4">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.AmountAndCurrencyExchangeDetails4"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:AmountRangeBoundary1">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.AmountRangeBoundary1"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:BankToCustomerDebitCreditNotificationV02">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.BankToCustomerDebitCreditNotificationV02"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:BankTransactionCodeStructure4">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.BankTransactionCodeStructure4"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:BankTransactionCodeStructure5">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.BankTransactionCodeStructure5"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:BankTransactionCodeStructure6">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.BankTransactionCodeStructure6"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:BatchInformation2">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.BatchInformation2"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.ActiveOrHistoricCurrencyAndAmount"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:BranchAndFinancialInstitutionIdentification4">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.BranchAndFinancialInstitutionIdentification4"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.BranchAndFinancialInstitutionIdentification4"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:BranchData2">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.BranchData2"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.BranchData2"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:CashAccount16">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.CashAccount16"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:CashAccount20">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.CashAccount20"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.CashAccount16"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:CashAccountType2">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.CashAccountType2"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.CashAccountType2"/>
     </bindings>
-    <bindings if-exists="true" scd="~tns:CashBalanceAvailability2">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.CashBalanceAvailability2"/>
+    <bindings if-exists="true" scd="~tns:CategoryPurpose1Choice">
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.CategoryPurpose1Choice"/>
     </bindings>
-    <bindings if-exists="true" scd="~tns:CashBalanceAvailabilityDate1">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.CashBalanceAvailabilityDate1"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:ChargeType2Choice">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.ChargeType2Choice"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:ChargesInformation6">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.ChargesInformation6"/>
+    <bindings if-exists="true" scd="~tns:ChargesInformation5">
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.ChargesInformation5"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:ClearingSystemIdentification2Choice">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.ClearingSystemIdentification2Choice"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.ClearingSystemIdentification2Choice"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ClearingSystemIdentification3Choice">
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.ClearingSystemIdentification3Choice"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:ClearingSystemMemberIdentification2">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.ClearingSystemMemberIdentification2"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.ClearingSystemMemberIdentification2"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:ContactDetails2">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.ContactDetails2"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.ContactDetails2"/>
     </bindings>
-    <bindings if-exists="true" scd="~tns:CorporateAction1">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.CorporateAction1"/>
+    <bindings if-exists="true" scd="~tns:CreditTransferTransactionInformation11">
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.CreditTransferTransactionInformation11"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:CreditorReferenceInformation2">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.CreditorReferenceInformation2"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.CreditorReferenceInformation2"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:CreditorReferenceType1Choice">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.CreditorReferenceType1Choice"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.CreditorReferenceType1Choice"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:CreditorReferenceType2">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.CreditorReferenceType2"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:CurrencyAndAmountRange2">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.CurrencyAndAmountRange2"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:CurrencyExchange5">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.CurrencyExchange5"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:DateAndDateTimeChoice">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.DateAndDateTimeChoice"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.CreditorReferenceType2"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:DateAndPlaceOfBirth">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.DateAndPlaceOfBirth"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:DatePeriodDetails">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.DatePeriodDetails"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:DateTimePeriodDetails">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.DateTimePeriodDetails"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.DateAndPlaceOfBirth"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:DocumentAdjustment1">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.DocumentAdjustment1"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.DocumentAdjustment1"/>
     </bindings>
-    <bindings if-exists="true" scd="~tns:EntryDetails1">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.EntryDetails1"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:EntryTransaction2">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.EntryTransaction2"/>
+    <bindings if-exists="true" scd="~tns:FIToFICustomerCreditTransferV02">
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.FIToFICustomerCreditTransferV02"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:FinancialIdentificationSchemeName1Choice">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.FinancialIdentificationSchemeName1Choice"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.FinancialIdentificationSchemeName1Choice"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:FinancialInstitutionIdentification7">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.FinancialInstitutionIdentification7"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:FinancialInstrumentQuantityChoice">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.FinancialInstrumentQuantityChoice"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:FromToAmountRange">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.FromToAmountRange"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.FinancialInstitutionIdentification7"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:GenericAccountIdentification1">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.GenericAccountIdentification1"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.GenericAccountIdentification1"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:GenericFinancialIdentification1">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.GenericFinancialIdentification1"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:GenericIdentification3">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.GenericIdentification3"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.GenericFinancialIdentification1"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:GenericOrganisationIdentification1">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.GenericOrganisationIdentification1"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.GenericOrganisationIdentification1"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:GenericPersonIdentification1">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.GenericPersonIdentification1"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.GenericPersonIdentification1"/>
     </bindings>
-    <bindings if-exists="true" scd="~tns:GroupHeader42">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.GroupHeader42"/>
+    <bindings if-exists="true" scd="~tns:GroupHeader33">
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.GroupHeader33"/>
     </bindings>
-    <bindings if-exists="true" scd="~tns:ImpliedCurrencyAmountRangeChoice">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.ImpliedCurrencyAmountRangeChoice"/>
+    <bindings if-exists="true" scd="~tns:InstructionForCreditorAgent1">
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.InstructionForCreditorAgent1"/>
     </bindings>
-    <bindings if-exists="true" scd="~tns:InterestType1Choice">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.InterestType1Choice"/>
+    <bindings if-exists="true" scd="~tns:InstructionForNextAgent1">
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.InstructionForNextAgent1"/>
     </bindings>
-    <bindings if-exists="true" scd="~tns:MessageIdentification2">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.MessageIdentification2"/>
+    <bindings if-exists="true" scd="~tns:LocalInstrument2Choice">
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.LocalInstrument2Choice"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:NameAndAddress10">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.NameAndAddress10"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:NumberAndSumOfTransactions1">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.NumberAndSumOfTransactions1"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:NumberAndSumOfTransactions2">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.NumberAndSumOfTransactions2"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.NameAndAddress10"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:OrganisationIdentification4">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.OrganisationIdentification4"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.OrganisationIdentification4"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:OrganisationIdentificationSchemeName1Choice">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.OrganisationIdentificationSchemeName1Choice"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:Pagination">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.Pagination"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.OrganisationIdentificationSchemeName1Choice"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:Party6Choice">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.Party6Choice"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.Party6Choice"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:PartyIdentification32">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.PartyIdentification32"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.PartyIdentification32"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:PaymentIdentification3">
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.PaymentIdentification3"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:PaymentTypeInformation21">
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.PaymentTypeInformation21"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:PersonIdentification5">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.PersonIdentification5"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.PersonIdentification5"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:PersonIdentificationSchemeName1Choice">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.PersonIdentificationSchemeName1Choice"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.PersonIdentificationSchemeName1Choice"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:PostalAddress6">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.PostalAddress6"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:ProprietaryAgent2">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.ProprietaryAgent2"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:ProprietaryBankTransactionCodeStructure1">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.ProprietaryBankTransactionCodeStructure1"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:ProprietaryDate2">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.ProprietaryDate2"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:ProprietaryParty2">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.ProprietaryParty2"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:ProprietaryPrice2">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.ProprietaryPrice2"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:ProprietaryQuantity1">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.ProprietaryQuantity1"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:ProprietaryReference1">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.ProprietaryReference1"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.PostalAddress6"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:Purpose2Choice">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.Purpose2Choice"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:Rate3">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.Rate3"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:RateType4Choice">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.RateType4Choice"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.Purpose2Choice"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:ReferredDocumentInformation3">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.ReferredDocumentInformation3"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.ReferredDocumentInformation3"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:ReferredDocumentType1Choice">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.ReferredDocumentType1Choice"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.ReferredDocumentType1Choice"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:ReferredDocumentType2">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.ReferredDocumentType2"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.ReferredDocumentType2"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:RegulatoryAuthority2">
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.RegulatoryAuthority2"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:RegulatoryReporting3">
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.RegulatoryReporting3"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:RemittanceAmount1">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.RemittanceAmount1"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.RemittanceAmount1"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:RemittanceInformation5">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.RemittanceInformation5"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.RemittanceInformation5"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:RemittanceLocation2">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.RemittanceLocation2"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.RemittanceLocation2"/>
     </bindings>
-    <bindings if-exists="true" scd="~tns:ReportEntry2">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.ReportEntry2"/>
+    <bindings if-exists="true" scd="~tns:ServiceLevel8Choice">
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.ServiceLevel8Choice"/>
     </bindings>
-    <bindings if-exists="true" scd="~tns:ReportingSource1Choice">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.ReportingSource1Choice"/>
+    <bindings if-exists="true" scd="~tns:SettlementDateTimeIndication1">
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.SettlementDateTimeIndication1"/>
     </bindings>
-    <bindings if-exists="true" scd="~tns:ReturnReason5Choice">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.ReturnReason5Choice"/>
+    <bindings if-exists="true" scd="~tns:SettlementInformation13">
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.SettlementInformation13"/>
     </bindings>
-    <bindings if-exists="true" scd="~tns:ReturnReasonInformation10">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.ReturnReasonInformation10"/>
+    <bindings if-exists="true" scd="~tns:SettlementTimeRequest2">
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.SettlementTimeRequest2"/>
     </bindings>
-    <bindings if-exists="true" scd="~tns:SecurityIdentification4Choice">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.SecurityIdentification4Choice"/>
+    <bindings if-exists="true" scd="~tns:StructuredRegulatoryReporting3">
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.StructuredRegulatoryReporting3"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:StructuredRemittanceInformation7">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.StructuredRemittanceInformation7"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:TaxAmount1">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.TaxAmount1"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:TaxAuthorisation1">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.TaxAuthorisation1"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:TaxCharges2">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.TaxCharges2"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:TaxInformation3">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.TaxInformation3"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:TaxParty1">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.TaxParty1"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:TaxParty2">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.TaxParty2"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:TaxPeriod1">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.TaxPeriod1"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:TaxRecord1">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.TaxRecord1"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:TaxRecordDetails1">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.TaxRecordDetails1"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:TechnicalInputChannel1Choice">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.TechnicalInputChannel1Choice"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:TotalTransactions2">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.TotalTransactions2"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:TotalsPerBankTransactionCode2">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.TotalsPerBankTransactionCode2"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:TransactionAgents2">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.TransactionAgents2"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:TransactionDates2">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.TransactionDates2"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:TransactionInterest2">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.TransactionInterest2"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:TransactionParty2">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.TransactionParty2"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:TransactionPrice2Choice">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.TransactionPrice2Choice"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:TransactionQuantities1Choice">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.TransactionQuantities1Choice"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:TransactionReferences2">
-      <class ref="iso.std.iso._20022.tech.xsd.camt_054_001.TransactionReferences2"/>
+      <class ref="iso.std.iso._20022.tech.xsd.pacs_008_001.StructuredRemittanceInformation7"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:AddressType2Code">
-      <typesafeEnumClass ref="iso.std.iso._20022.tech.xsd.camt_054_001.AddressType2Code"/>
+      <typesafeEnumClass ref="iso.std.iso._20022.tech.xsd.pacs_008_001.AddressType2Code"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:CashAccountType4Code">
-      <typesafeEnumClass ref="iso.std.iso._20022.tech.xsd.camt_054_001.CashAccountType4Code"/>
+      <typesafeEnumClass ref="iso.std.iso._20022.tech.xsd.pacs_008_001.CashAccountType4Code"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:ChargeBearerType1Code">
-      <typesafeEnumClass ref="iso.std.iso._20022.tech.xsd.camt_054_001.ChargeBearerType1Code"/>
+      <typesafeEnumClass ref="iso.std.iso._20022.tech.xsd.pacs_008_001.ChargeBearerType1Code"/>
     </bindings>
-    <bindings if-exists="true" scd="~tns:ChargeType1Code">
-      <typesafeEnumClass ref="iso.std.iso._20022.tech.xsd.camt_054_001.ChargeType1Code"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:CopyDuplicate1Code">
-      <typesafeEnumClass ref="iso.std.iso._20022.tech.xsd.camt_054_001.CopyDuplicate1Code"/>
+    <bindings if-exists="true" scd="~tns:ClearingChannel2Code">
+      <typesafeEnumClass ref="iso.std.iso._20022.tech.xsd.pacs_008_001.ClearingChannel2Code"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:CreditDebitCode">
-      <typesafeEnumClass ref="iso.std.iso._20022.tech.xsd.camt_054_001.CreditDebitCode"/>
+      <typesafeEnumClass ref="iso.std.iso._20022.tech.xsd.pacs_008_001.CreditDebitCode"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:DocumentType3Code">
-      <typesafeEnumClass ref="iso.std.iso._20022.tech.xsd.camt_054_001.DocumentType3Code"/>
+      <typesafeEnumClass ref="iso.std.iso._20022.tech.xsd.pacs_008_001.DocumentType3Code"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:DocumentType5Code">
-      <typesafeEnumClass ref="iso.std.iso._20022.tech.xsd.camt_054_001.DocumentType5Code"/>
+      <typesafeEnumClass ref="iso.std.iso._20022.tech.xsd.pacs_008_001.DocumentType5Code"/>
     </bindings>
-    <bindings if-exists="true" scd="~tns:EntryStatus2Code">
-      <typesafeEnumClass ref="iso.std.iso._20022.tech.xsd.camt_054_001.EntryStatus2Code"/>
+    <bindings if-exists="true" scd="~tns:Instruction3Code">
+      <typesafeEnumClass ref="iso.std.iso._20022.tech.xsd.pacs_008_001.Instruction3Code"/>
     </bindings>
-    <bindings if-exists="true" scd="~tns:InterestType1Code">
-      <typesafeEnumClass ref="iso.std.iso._20022.tech.xsd.camt_054_001.InterestType1Code"/>
+    <bindings if-exists="true" scd="~tns:Instruction4Code">
+      <typesafeEnumClass ref="iso.std.iso._20022.tech.xsd.pacs_008_001.Instruction4Code"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:NamePrefix1Code">
-      <typesafeEnumClass ref="iso.std.iso._20022.tech.xsd.camt_054_001.NamePrefix1Code"/>
+      <typesafeEnumClass ref="iso.std.iso._20022.tech.xsd.pacs_008_001.NamePrefix1Code"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:Priority2Code">
+      <typesafeEnumClass ref="iso.std.iso._20022.tech.xsd.pacs_008_001.Priority2Code"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:Priority3Code">
+      <typesafeEnumClass ref="iso.std.iso._20022.tech.xsd.pacs_008_001.Priority3Code"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:RegulatoryReportingType1Code">
+      <typesafeEnumClass ref="iso.std.iso._20022.tech.xsd.pacs_008_001.RegulatoryReportingType1Code"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:RemittanceLocationMethod2Code">
-      <typesafeEnumClass ref="iso.std.iso._20022.tech.xsd.camt_054_001.RemittanceLocationMethod2Code"/>
+      <typesafeEnumClass ref="iso.std.iso._20022.tech.xsd.pacs_008_001.RemittanceLocationMethod2Code"/>
     </bindings>
-    <bindings if-exists="true" scd="~tns:TaxRecordPeriod1Code">
-      <typesafeEnumClass ref="iso.std.iso._20022.tech.xsd.camt_054_001.TaxRecordPeriod1Code"/>
+    <bindings if-exists="true" scd="~tns:SettlementMethod1Code">
+      <typesafeEnumClass ref="iso.std.iso._20022.tech.xsd.pacs_008_001.SettlementMethod1Code"/>
     </bindings>
   </bindings>
 </bindings>
