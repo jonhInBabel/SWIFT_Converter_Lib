@@ -22,9 +22,10 @@ public class SWIFT_Message_Converter {
 	 * Devuelve la traducción de mensaje mt a mx
 	 * @param mtMessage
 	 * @return
+	 * @throws MTPreconditionException 
 	 * @throws ParseException 
 	 */
-	public String mt_to_mx( String mtMessage ) throws MTTypeNotFoundException, MTParsingException, MTConversionException {
+	public String mt_to_mx( String mtMessage ) throws MTTypeNotFoundException, MTParsingException, MTConversionException, MTPreconditionException {
 		AbstractMT mt;
 		try {
 			mt = AbstractMT.parse( mtMessage );

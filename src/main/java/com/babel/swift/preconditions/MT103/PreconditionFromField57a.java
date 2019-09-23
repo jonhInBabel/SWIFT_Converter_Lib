@@ -1,12 +1,13 @@
-package com.babel.swift.rules.MT103.MTRules;
+package com.babel.swift.preconditions.MT103;
 
 import java.util.List;
 
 import org.springframework.util.StringUtils;
 
 import com.babel.swift.exceptions.MTPreconditionException;
-import com.babel.swift.rules.IMTPrecondition;
 import com.babel.swift.support.Constants;
+
+import com.babel.swift.preconditions.IMTPrecondition;
 
 /*
  * Input: 57a with option B

@@ -1,4 +1,4 @@
-package com.babel.swift.rules;
+package com.babel.swift.preconditions;
 
 import java.util.List;
 
