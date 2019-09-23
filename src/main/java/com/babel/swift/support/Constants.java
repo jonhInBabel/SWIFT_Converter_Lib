@@ -13,4 +13,7 @@ public class Constants {
 	public static final String YYYY_MM_DD 			= "yyyy-MM-dd";
 	public static final String YYYY_MM_DDTHH_MM_SS 	= "yyyy-MM-dd'T'HH:mm:ss";
 
+	// mt103 preconditions messages
+	public static final String FIELD57_PRECONDITION	= "Fail ('01006', 'Field 57a must not be used with option B.', 57a Account With Institution)";
+	
 }
