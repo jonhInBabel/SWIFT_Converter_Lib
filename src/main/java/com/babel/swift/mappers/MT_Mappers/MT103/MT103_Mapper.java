@@ -5,6 +5,8 @@ import com.babel.swift.mappers.MT_Mappers.AMTMapper;
 import com.prowidesoftware.swift.model.mt.AbstractMT;
 import com.prowidesoftware.swift.model.mt.mt1xx.MT103;
 
+import iso.std.iso._20022.tech.xsd.pacs_008_001_02.Document;
+
 public class MT103_Mapper extends AMTMapper {
 
 	MT103 mt103;
@@ -15,7 +17,13 @@ public class MT103_Mapper extends AMTMapper {
 
 	@Override
 	protected void applyMTRules(AbstractMT mtMessage) throws MTFieldParsingException {
-		// TODO Auto-generated method stub
+		
+		mt103 = (MT103) mtMessage;
+		Document document = new Document();
+		
+		// TODO document.set ...
+		
+		this.mxObject = document;
 		
 	}
 
