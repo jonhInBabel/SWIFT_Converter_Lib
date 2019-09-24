@@ -21,4 +21,5 @@ public class Constants {
 	public static final String FIELD56C_PRECONDITION = "Fail ('01005', 'If field 56a is present with option C, then it must start with // and must be followed by the clearing code of the intermediary institution. If 56C starts with //RT, then it must start with //RT// followed by the clearing code of the intermediary institution.', 56a Intermediary Institution\\56C)";
 	public static final String FIELD55B_PRECONDITION = "Fail ('01004', 'Field 55a must not be used with option B.', 55a Third Reimbursement Institution)";
 	public static final String FIELD53A_PRECONDITION = "Fail ('01004', 'Field 55a must not be used with option B.', 55a Third Reimbursement Institution)";
+	public static final String FIELD71F_PRECONDITION = "Fail ('01000', 'The currency code in fields 71F and 32A must be the same.', ., ..\\32A Value Date/Currency/Interbank Settled Amount)";
 }

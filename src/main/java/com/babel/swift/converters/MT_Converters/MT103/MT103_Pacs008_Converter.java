@@ -2,6 +2,7 @@ package com.babel.swift.converters.MT_Converters.MT103;
 
 import com.babel.swift.converters.MT_Converters.I_MT_Converter;
 import com.babel.swift.exceptions.MTConversionException;
+import com.babel.swift.exceptions.MTPreconditionException;
 import com.babel.swift.mappers.MT_Mappers.AMTMapper;
 import com.babel.swift.mappers.MT_Mappers.MT103.MT103_Mapper;
 import com.babel.swift.validators.AMTValidator;
@@ -21,7 +22,7 @@ public class MT103_Pacs008_Converter implements I_MT_Converter {
 	}
 	
 	@Override
-	public String mt_to_mx(AbstractMT mt) throws MTConversionException {
+	public String mt_to_mx(AbstractMT mt) throws MTConversionException, MTPreconditionException {
 
 		this.validator.validate( mt );
 		return mapper.convert2MX( mt );

@@ -12,12 +12,12 @@ import com.babel.swift.preconditions.IMTPrecondition;
 /*
  * Input: 57a with option B
  */
-public class PreconditionFromField57a implements IMTPrecondition {
+public class SR7 implements IMTPrecondition {
 
 	@Override
-	public void apply(List<Object> mtFields) throws MTPreconditionException {
+	public void apply( List<Object> mtFields ) throws MTPreconditionException {
 		
-		if( !StringUtils.isEmpty( mtFields.get(0) ) ) {
+		if( mtFields.size() >= 1 && ! StringUtils.isEmpty( mtFields.get(0) ) ) {
 			
 			throw new MTPreconditionException( Constants.FIELD57_PRECONDITION );
 			
