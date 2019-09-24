@@ -14,7 +14,7 @@ public class MT103_Validator extends AMTValidator {
 	public void validate(AbstractMT mt) {
 		
 		MT103 mt103 = (MT103) mt;
-		
+
 		// TODO llamar a las reglas de precondicion
 		
 	}
