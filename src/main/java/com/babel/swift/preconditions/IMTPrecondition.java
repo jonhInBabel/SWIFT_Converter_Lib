@@ -1,14 +1,11 @@
 package com.babel.swift.preconditions;
 
-import java.util.List;
-
 import com.babel.swift.exceptions.MTPreconditionException;
+import com.prowidesoftware.swift.model.mt.mt1xx.MT103;
+
 
 public interface IMTPrecondition {
-	/**
-	 * @param mtFields
-	 * @throws MTPreconditionException
-	 */
-	void apply( List<Object> mtFields ) throws MTPreconditionException;
+	
+	void apply( MT103 mt103 ) throws MTPreconditionException;
 	
 }

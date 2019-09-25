@@ -9,26 +9,26 @@ import com.babel.swift.preconditions.IMTPrecondition;
 import com.babel.swift.support.Constants;
 import com.prowidesoftware.swift.model.field.Field32A;
 import com.prowidesoftware.swift.model.field.Field71F;
+import com.prowidesoftware.swift.model.mt.mt1xx.MT103;
 
-/*
- * Input: first element = Field32A, rest = 71Fs
- */
+
 public class SR2 implements IMTPrecondition {
 
 	@Override
-	public void apply( List<Object> mtFields ) throws MTPreconditionException {
+	public void apply( MT103 mt103 ) throws MTPreconditionException {
 
-		Field32A field32A = (Field32A) mtFields.get(0);
-		mtFields.remove(0);
-		for( Object object : mtFields ) {
-			if( !StringUtils.isEmpty( object ) ) {
-				Field71F field71F = (Field71F) object;
+		Field32A field32A 			= mt103.getField32A();
+		List<Field71F> listField71F = mt103.getField71F();
+		
+		if( !StringUtils.isEmpty( field32A ) ) { // el campo 32A es obligatorio, siempre debería pasar este if
+			for( Field71F field71F : listField71F ) {
 				if( !( field32A.getCurrency().equals(field71F.getCurrency() ) ) ) {
-					throw new MTPreconditionException( Constants.FIELD71F_PRECONDITION );
+					
+					throw new MTPreconditionException( Constants.SR2 );
+					
 				}
 			}
 		}
-		
 	}
 
 }

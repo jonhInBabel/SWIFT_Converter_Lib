@@ -1,13 +1,12 @@
 package com.babel.swift.preconditions.MT103;
 
-import java.util.List;
-
 import org.springframework.util.StringUtils;
 
 import com.babel.swift.exceptions.MTPreconditionException;
-import com.babel.swift.support.Constants;
-
 import com.babel.swift.preconditions.IMTPrecondition;
+import com.babel.swift.support.Constants;
+import com.prowidesoftware.swift.model.field.Field57B;
+import com.prowidesoftware.swift.model.mt.mt1xx.MT103;
 
 /*
  * Input: 57a with option B
@@ -15,11 +14,13 @@ import com.babel.swift.preconditions.IMTPrecondition;
 public class SR7 implements IMTPrecondition {
 
 	@Override
-	public void apply( List<Object> mtFields ) throws MTPreconditionException {
+	public void apply( MT103 mt103 ) throws MTPreconditionException {
 		
-		if( mtFields.size() >= 1 && ! StringUtils.isEmpty( mtFields.get(0) ) ) {
+		Field57B field57B = mt103.getField57B();
+		
+		if( !StringUtils.isEmpty( field57B ) ) {
 			
-			throw new MTPreconditionException( Constants.FIELD57_PRECONDITION );
+			throw new MTPreconditionException( Constants.SR7 );
 			
 		}
 		
