@@ -9,13 +9,16 @@ import com.prowidesoftware.swift.model.field.Field53B;
 import com.prowidesoftware.swift.model.field.Field54A;
 import com.prowidesoftware.swift.model.field.Field54B;
 import com.prowidesoftware.swift.model.field.Field54D;
+import com.prowidesoftware.swift.model.mt.AbstractMT;
 import com.prowidesoftware.swift.model.mt.mt1xx.MT103;
 
 
 public class SR8 implements IMTPrecondition {
     
     @Override
-    public void apply( MT103 mt103) throws MTPreconditionException {
+    public void apply( AbstractMT mt ) throws MTPreconditionException {
+    	
+    	MT103 mt103 = (MT103) mt;
     	
     	Field53B field53B = mt103.getField53B();
     	Field54A field54A = mt103.getField54A();

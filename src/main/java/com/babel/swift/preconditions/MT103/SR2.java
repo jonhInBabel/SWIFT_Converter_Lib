@@ -9,14 +9,17 @@ import com.babel.swift.preconditions.IMTPrecondition;
 import com.babel.swift.support.Constants;
 import com.prowidesoftware.swift.model.field.Field32A;
 import com.prowidesoftware.swift.model.field.Field71F;
+import com.prowidesoftware.swift.model.mt.AbstractMT;
 import com.prowidesoftware.swift.model.mt.mt1xx.MT103;
 
 
 public class SR2 implements IMTPrecondition {
 
 	@Override
-	public void apply( MT103 mt103 ) throws MTPreconditionException {
+	public void apply( AbstractMT mt ) throws MTPreconditionException {
 
+		MT103 mt103 = (MT103) mt;
+		
 		Field32A field32A 			= mt103.getField32A();
 		List<Field71F> listField71F = mt103.getField71F();
 		
