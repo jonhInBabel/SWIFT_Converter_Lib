@@ -1,30 +1,17 @@
 package com.babel.swift.rules.MT103.MTRules;
 
-import java.util.Map;
-
-import org.springframework.util.StringUtils;
-
-import com.babel.swift.exceptions.MTFieldParsingException;
-import com.babel.swift.rules.IMTComplexRule;
-import com.prowidesoftware.swift.model.field.Field23B;
-import com.prowidesoftware.swift.model.field.Field23E;
-import com.prowidesoftware.swift.model.field.Field56A;
-import com.prowidesoftware.swift.model.field.Field56C;
-import com.prowidesoftware.swift.model.field.Field56D;
-import com.prowidesoftware.swift.model.field.Field57A;
-import com.prowidesoftware.swift.model.field.Field57C;
-import com.prowidesoftware.swift.model.field.Field57D;
-import com.prowidesoftware.swift.model.field.Field77B;
-
-import iso.std.iso._20022.tech.xsd.pacs_008_001_02.ClearingChannel2Code;
-import iso.std.iso._20022.tech.xsd.pacs_008_001_02.PaymentTypeInformation21;
+import com.babel.swift.rules.IMTRule;
+import com.prowidesoftware.swift.model.mt.AbstractMT;
+import com.prowidesoftware.swift.model.mt.mt1xx.MT103;
 
 
-public class PmtTpInf_ClrChanl implements IMTComplexRule {
+public class PmtTpInf_ClrChanl implements IMTRule {
 
 	@Override
-	public Object apply( Map<String, Object> mtFields ) throws MTFieldParsingException {
+	public Object apply( AbstractMT mt ) {
 		
+		MT103 mt103 = (MT103) mt;
+		/*
 		Field23E field23E = (Field23E) mtFields.get("23E");
 		Field23B field23B = (Field23B) mtFields.get("23B");
 		Field56A field56A = (Field56A) mtFields.get("56A");
@@ -51,7 +38,8 @@ public class PmtTpInf_ClrChanl implements IMTComplexRule {
 				return clearingChannel2Code.fromValue("RTGS");
 			}
 		}
-		
+		*/
+		return null;
 	}
 	
 }

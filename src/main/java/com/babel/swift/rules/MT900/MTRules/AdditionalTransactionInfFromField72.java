@@ -1,30 +1,24 @@
 package com.babel.swift.rules.MT900.MTRules;
 
+import org.springframework.util.StringUtils;
+
 import com.babel.swift.exceptions.MTFieldParsingException;
 import com.babel.swift.rules.IMTRule;
-import com.prowidesoftware.swift.model.field.Field72;
-import org.springframework.util.StringUtils;
+import com.prowidesoftware.swift.model.mt.AbstractMT;
+import com.prowidesoftware.swift.model.mt.mt9xx.MT900;
 
 
 public class AdditionalTransactionInfFromField72 implements IMTRule {
 
-	/*
-	public static String getField20Value( Field72 field72 ) {
-		if( field72 != null) {
-			return field72.getNarrative();
-		}
-		return null;
-	}
-	*/
-
+	
 	@Override
-	public Object apply(Object mtField) throws MTFieldParsingException {
+	public Object apply(AbstractMT mt) throws MTFieldParsingException {
 		
+		MT900 mt900 = (MT900) mt;
 		String narrative= null;
 		
-		if ( !StringUtils.isEmpty( mtField ) ) {
-			Field72 field72 = (Field72) mtField;
-			narrative= field72.getNarrative();
+		if ( !StringUtils.isEmpty( mt900.getField72() ) ) {
+			narrative = mt900.getField72().getNarrative();
 		}
 
 		return narrative;

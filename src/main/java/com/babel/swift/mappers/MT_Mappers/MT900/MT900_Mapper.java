@@ -38,7 +38,7 @@ public class MT900_Mapper extends AMTMapper {
         BranchAndFinancialInstitutionIdentification4 branchAndFinancialInstitutionIdentification4 = null;
 
         //bic = LogicalTerminalAddress_Rules.getBIC( mt900.getLogicalTerminal() );
-        FinancialInstitutionIdentification7 financialInstitutionIdentification7 = (FinancialInstitutionIdentification7) new BranchAndFinancialInstId4FromLTA().apply(mt900.getLogicalTerminal());
+        FinancialInstitutionIdentification7 financialInstitutionIdentification7 = (FinancialInstitutionIdentification7) new BranchAndFinancialInstId4FromLTA().apply(mt900);
 
 
 
@@ -57,9 +57,9 @@ public class MT900_Mapper extends AMTMapper {
 
 
         //Othr
-        GenericAccountIdentification1 genericAccountIdentification1= (GenericAccountIdentification1) new OtherIdentificationFromField25().apply( mt900.getField25() );
+        GenericAccountIdentification1 genericAccountIdentification1= (GenericAccountIdentification1) new OtherIdentificationFromField25().apply( mt900 );
         //IdIban
-        String iban = (String) new IbanFromField25().apply(mt900.getField25());
+        String iban = (String) new IbanFromField25().apply(mt900);
 
         AccountIdentification4Choice accountIdentification4Choice = null;
 
@@ -79,7 +79,7 @@ public class MT900_Mapper extends AMTMapper {
     private CashAccount20 cashAccount20() throws MTFieldParsingException {
 
         AccountIdentification4Choice accountIdentification4Choice = accountIdentification4Choice();
-        PartyIdentification32 partyIdentification32 = (PartyIdentification32) new PartyIdentification32FromIDA().apply(mt900.getReceiver());
+        PartyIdentification32 partyIdentification32 = (PartyIdentification32) new PartyIdentification32FromIDA().apply(mt900);
         BranchAndFinancialInstitutionIdentification4 branchAndFinancialInstitutionIdentification4 = branchAndFinancialInstitutionIdentification4();
         //Acct
         CashAccount20 account20 = null;
@@ -96,11 +96,11 @@ public class MT900_Mapper extends AMTMapper {
     private TransactionParty2 transactionParty2() throws MTFieldParsingException {
 
 
-        PostalAddress6 postalAddress6 = (PostalAddress6) new AddressLinesFromField52D().apply(mt900.getField52D());
-        String name = (String) new NameFromField52D().apply(mt900.getField52D());
+        PostalAddress6 postalAddress6 = (PostalAddress6) new AddressLinesFromField52D().apply(mt900);
+        String name = (String) new NameFromField52D().apply(mt900);
 
         //Dbtr
-        Party6Choice party6Choice	= (Party6Choice) new OrganisationFromField52A().apply( mt900.getField52A() );
+        Party6Choice party6Choice	= (Party6Choice) new OrganisationFromField52A().apply( mt900 );
 
 
         PartyIdentification32 partyIdentification322 = null;
@@ -126,9 +126,9 @@ public class MT900_Mapper extends AMTMapper {
     private List<EntryDetails1> entryDetails1() throws MTFieldParsingException {
 
         //Refs
-        TransactionReferences2 transactionReferences2 = (TransactionReferences2) new EndToEndIdFromField21().apply(mt900.getField21());
+        TransactionReferences2 transactionReferences2 = (TransactionReferences2) new EndToEndIdFromField21().apply(mt900);
         TransactionParty2 transactionParty2 = transactionParty2();
-        String additionalTransactionInfo = (String) new AdditionalTransactionInfFromField72().apply(mt900.getField72());
+        String additionalTransactionInfo = (String) new AdditionalTransactionInfFromField72().apply(mt900);
 
 
         //TxDtls
@@ -163,14 +163,14 @@ public class MT900_Mapper extends AMTMapper {
     private List<AccountNotification2> accountNotification2() throws MTFieldParsingException {
 
         //ValDt
-        DateAndDateTimeChoice dateAndDateTimeChoice = (DateAndDateTimeChoice) new DateFromField32A().apply(mt900.getField32A());
+        DateAndDateTimeChoice dateAndDateTimeChoice = (DateAndDateTimeChoice) new DateFromField32A().apply(mt900);
         //Amt
-        ActiveOrHistoricCurrencyAndAmount activeOrHistoricCurrencyAndAmount = (ActiveOrHistoricCurrencyAndAmount) new CurrencyAndAmountFromField32A().apply(mt900.getField32A());
+        ActiveOrHistoricCurrencyAndAmount activeOrHistoricCurrencyAndAmount = (ActiveOrHistoricCurrencyAndAmount) new CurrencyAndAmountFromField32A().apply(mt900);
 
         List<EntryDetails1> entryDetails1 = entryDetails1();
 
         CashAccount20 cashAccount20 = cashAccount20();
-        String identification = (String) new IdentificationFromField20().apply(mt900.getField20());
+        String identification = (String) new IdentificationFromField20().apply(mt900);
 
 
         //Ntry
@@ -212,7 +212,7 @@ public class MT900_Mapper extends AMTMapper {
 
         List<AccountNotification2> accountNotification2s = accountNotification2();
         //GrpHdr
-        GroupHeader42 messageId = (GroupHeader42) new MessageIdFromField20().apply(mt900.getField20());
+        GroupHeader42 messageId = (GroupHeader42) new MessageIdFromField20().apply(mt900);
 
         //BkToCstmrDbtCdtNtfctn
         BankToCustomerDebitCreditNotificationV02 bankToCustomerDebitCreditNotificationV02  = new BankToCustomerDebitCreditNotificationV02();
