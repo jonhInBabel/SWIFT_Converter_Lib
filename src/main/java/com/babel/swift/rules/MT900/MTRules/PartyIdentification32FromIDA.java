@@ -2,6 +2,9 @@ package com.babel.swift.rules.MT900.MTRules;
 
 import com.babel.swift.exceptions.MTFieldParsingException;
 import com.babel.swift.rules.IMTRule;
+import com.prowidesoftware.swift.model.mt.AbstractMT;
+import com.prowidesoftware.swift.model.mt.mt9xx.MT900;
+
 import iso.std.iso._20022.tech.xsd.camt_054_001_02.OrganisationIdentification4;
 import iso.std.iso._20022.tech.xsd.camt_054_001_02.Party6Choice;
 import iso.std.iso._20022.tech.xsd.camt_054_001_02.PartyIdentification32;
@@ -11,23 +14,23 @@ public class PartyIdentification32FromIDA implements IMTRule {
 
 	
 	@Override
-	public Object apply(Object mtField) throws MTFieldParsingException {
+	public Object apply(AbstractMT mt) throws MTFieldParsingException {
 		
-
+		MT900 mt900 = (MT900) mt;
+		
 		//Ownr
 		Party6Choice party6Choice = null;
 		PartyIdentification32 partyIdentification32 = null;
 		OrganisationIdentification4 organisationIdentification4 = null;
 
-		if( !StringUtils.isEmpty( mtField ) ) {
+		if( !StringUtils.isEmpty( mt900.getReceiver() ) ) {
 
-			String receiver = (String) mtField;
 			String value = null;
-			if( receiver != null && receiver.length() >= 10 ) {
-//TODO			if( isBIC( receiver.substring(0, 8) + receiver.substring(9) ) ||
-//TODO				isBEI( receiver.substring(0, 8) + receiver.substring(9)	) {
+			if( mt900.getReceiver() != null && mt900.getReceiver().length() >= 10 ) {
+//TODO			if( isBIC( mt900.getReceiver().substring(0, 8) + mt900.getReceiver().substring(9) ) ||
+//TODO				isBEI( mt900.getReceiver().substring(0, 8) + mt900.getReceiver().substring(9)	) {
 
-				value = receiver.substring(0, 8) + receiver.substring(9);
+				value = mt900.getReceiver().substring(0, 8) + mt900.getReceiver().substring(9);
 
 				organisationIdentification4 = new OrganisationIdentification4();
 				organisationIdentification4.setBICOrBEI( value );

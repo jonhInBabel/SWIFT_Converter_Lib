@@ -1,27 +1,30 @@
 package com.babel.swift.rules.MT900.MTRules;
 
 
+import org.springframework.util.StringUtils;
+
 import com.babel.swift.rules.IMTRule;
-import com.prowidesoftware.swift.model.field.Field52A;
+import com.prowidesoftware.swift.model.mt.AbstractMT;
+import com.prowidesoftware.swift.model.mt.mt9xx.MT900;
+
 import iso.std.iso._20022.tech.xsd.camt_054_001_02.OrganisationIdentification4;
 import iso.std.iso._20022.tech.xsd.camt_054_001_02.Party6Choice;
-import org.springframework.util.StringUtils;
 
 
 public class OrganisationFromField52A implements IMTRule {
 
 
 	@Override
-	public Object apply(Object mtField)
+	public Object apply(AbstractMT mt)
 	{
+		MT900 mt900 = (MT900) mt;
 		Party6Choice party6Choice1 = null;
-		if(!StringUtils.isEmpty(mtField)) {
+		if(!StringUtils.isEmpty(mt900.getField52A())) {
 			
-			Field52A field52A = (Field52A) mtField;
 			OrganisationIdentification4 organisationIdentification4 = null;
 			
 		    	organisationIdentification4 = new OrganisationIdentification4();
-				organisationIdentification4.setBICOrBEI( field52A.getValue());
+				organisationIdentification4.setBICOrBEI( mt900.getField52A().getValue());
 				party6Choice1 = new Party6Choice();
 				party6Choice1.setOrgId(organisationIdentification4);
 			
